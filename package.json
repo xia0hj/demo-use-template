@@ -10,7 +10,7 @@
   "categories": [
     "Other"
   ],
-  "main": "./dist/index.js",
+  "main": "./dist/extension.js",
   "icon": "res/icon.png",
   "files": [
     "dist"
@@ -22,17 +22,16 @@
     "onStartupFinished"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --external vscode",
-    "dev": "nr build --watch",
+    "build": "tsup src/extension.ts --external vscode",
+    "dev": "npm run build --watch",
     "lint": "eslint .",
-    "vscode:prepublish": "nr build",
+    "vscode:prepublish": "npm run build",
     "publish": "vsce publish --no-dependencies",
     "pack": "vsce package --no-dependencies",
     "test": "vitest",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@antfu/ni": "^0.21.10",
     "@types/vscode": "^1.84.1",
     "@vscode/vsce": "^2.22.0",
     "eslint": "^8.53.0",

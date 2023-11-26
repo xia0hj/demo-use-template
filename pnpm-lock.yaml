@@ -8,9 +8,6 @@ importers:
 
   .:
     devDependencies:
-      '@antfu/ni':
-        specifier: ^0.21.10
-        version: 0.21.10
       '@types/vscode':
         specifier: ^1.84.1
         version: 1.84.1
@@ -41,11 +38,6 @@ packages:
   /@aashutoshrathi/word-wrap@1.2.6:
     resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
     engines: {node: '>=0.10.0'}
-    dev: true
-
-  /@antfu/ni@0.21.10:
-    resolution: {integrity: sha512-EHIUsdIKeBYSoo4rtLNl0Myzp0aMaaJHnx0i5OK9Q4HoYd82z21CyOghz7HAOQOxYVPy+zzLOUmM+L4SA5V/tQ==}
-    hasBin: true
     dev: true
 
   /@esbuild/android-arm64@0.18.20:
