@@ -23,9 +23,9 @@
   ],
   "scripts": {
     "build": "tsup src/extension.ts --external vscode",
-    "dev": "npm run build --watch",
+    "dev": "pnpm run build --watch",
     "lint": "eslint .",
-    "vscode:prepublish": "npm run build",
+    "vscode:prepublish": "pnpm run build",
     "publish": "vsce publish --no-dependencies",
     "pack": "vsce package --no-dependencies",
     "test": "vitest",
