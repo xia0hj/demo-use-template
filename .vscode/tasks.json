@@ -4,9 +4,9 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "build",
       "type": "npm",
-      "script": "dev",
-      "isBackground": true,
+      "script": "build",
       "presentation": {
         "reveal": "never"
       },
@@ -19,8 +19,7 @@
             "endsPattern": "Build success"
           }
         }
-      ],
-      "group": "build"
+      ]
     }
   ]
 }

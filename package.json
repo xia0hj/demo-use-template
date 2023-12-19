@@ -22,19 +22,22 @@
     "onStartupFinished"
   ],
   "scripts": {
-    "build": "tsup src/extension.ts --external vscode",
-    "dev": "pnpm run build --watch",
+    "build": "tsup",
     "lint": "eslint .",
+    "prettier": "prettier . --write",
+    "test": "vitest",
     "vscode:prepublish": "pnpm run build",
     "publish": "vsce publish --no-dependencies",
     "pack": "vsce package --no-dependencies",
-    "test": "vitest",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@types/vscode": "^1.84.1",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
     "@vscode/vsce": "^2.22.0",
     "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.1.0",
     "prettier": "^3.1.0",
     "tsup": "^7.2.0",
     "typescript": "^5.2.2",
