@@ -23,13 +23,11 @@
   ],
   "scripts": {
     "build": "tsup",
-    "lint": "eslint .",
+    "eslint": "eslint .",
+    "typecheck": "tsc --noEmit",
     "prettier": "prettier . --write",
     "test": "vitest",
-    "vscode:prepublish": "pnpm run build",
-    "publish": "vsce publish --no-dependencies",
-    "pack": "vsce package --no-dependencies",
-    "typecheck": "tsc --noEmit"
+    "pack": "vsce package --no-dependencies"
   },
   "devDependencies": {
     "@types/vscode": "^1.84.1",
